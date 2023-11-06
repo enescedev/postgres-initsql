@@ -7,4 +7,4 @@ su - postgres -c "psql -U postgres -c \"ALTER USER postgres WITH PASSWORD 'postg
 su - postgres -c "psql -U postgres -c 'CREATE DATABASE bulutdb;'"
 
 # "bulutdb" veritabanına bağlan ve init.sql dosyasını çalıştır
-su - postgres -c 'psql -U postgres -d bulutdb -f /home/mock/init.sql'
+su - postgres -c 'psql -U postgres -d bulutdb -f /tmp/init.sql'
