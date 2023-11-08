@@ -1,7 +1,7 @@
-# postgres-initsql
+## Aşağıdaki işlemleri sırasıyla terminal kullanarak gerçekleştirin.
 
-# "bulutdb" adında bir veritabanı oluştur
+### Aşağıdaki komut postgres kullanıcısına bağlanıp "bulutdb" adında bir veritabanı oluşturmaya yarar.
 su - postgres -c "psql -U postgres -c 'CREATE DATABASE bulutdb;'"
 
-# "bulutdb" veritabanına bağlan ve init.sql dosyasını çalıştır
+### Bu komut ise postgres kullanıcısına ve oluşturulan bulutdb veritabanına bağlanıp içerisinde init.sql dosyasını çalıştırır.
 su - postgres -c 'psql -U postgres -d bulutdb -f /tmp/postgres-initsql/init.sql'
